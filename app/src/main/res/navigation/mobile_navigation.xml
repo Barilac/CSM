@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_map">
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/nav_map"
         android:name="csm.czech_soil_map.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="@string/menu_map"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_soillist"
         android:name="csm.czech_soil_map.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_soillist"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
