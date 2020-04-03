@@ -15,6 +15,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
         Intent intent = getIntent();
+        setTitle(intent.getStringExtra("soil_name"));
         ((TextView)findViewById(R.id.soil_name_detail_id)).setText(intent.getStringExtra("soil_name"));
         ((TextView)findViewById(R.id.soil_text_detail_id)).setText(intent.getStringExtra("soil_text"));
     }
