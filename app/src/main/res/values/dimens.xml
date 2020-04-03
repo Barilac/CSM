@@ -5,4 +5,6 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="listview_row_subheader_textsize">18dp</dimen>
+    <dimen name="listview_row_text_textsize">12dp</dimen>
 </resources>

@@ -6,51 +6,12 @@
     android:layout_height="match_parent">
 
 
-    <SearchView
-        android:id="@+id/search"
+    <ListView
+        android:id="@+id/soil_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:queryHint="Search the type"
-        />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/search"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="16dp"
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="28dp"
-                android:text="Anthrosol"
-                android:textStyle="bold"
-                android:textAllCaps="true"
-                />
-
-            <TextView
-                android:id="@+id/Anthrosol"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="An anthrosol (or anthropogenic soil) in the World Reference Base for Soil Resources (WRB) is a type of soil that has been formed or heavily modified due to long-term human activity, such as from irrigation, addition of organic waste or wet-field cultivation used to create paddy fields.
-
-Such soils can be formed from any parent soil, and are commonly found in areas where agriculture has been practised for centuries. Anthrosols can be found worldwide, though they tend to have different soil horizons in different regions. For example, in northwestern Europe anthrosols commonly have plaggic or terric (strongly affected by manure) horizons, and together they cover some 500,000 hectares." />
-
-
-        </LinearLayout>
-    </ScrollView>
-
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

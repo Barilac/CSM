@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="soil_names">
+        <item>Anthrosol</item>
+        <item>Brown earth</item>
+        <item>Cambisol</item>
+        <item>Chernozem</item>
+        <item>Gley</item>
+        <item>Gleyic Chernozems</item>
+        <item>Luvisol</item>
+        <item>Pararendzina</item>
+        <item>Rendzina</item>
+    </string-array>
+
+    <string-array name="soil_texts">
+        <item>Anthrosol Anthrosol Anthrosol Anthrosol Anthrosol Anthrosol Anthrosol Anthrosol Anthrosol Anthrosol Anthrosol Anthrosol</item>
+        <item>Brown earth Brown earth Brown earth Brown earth Brown earth Brown earth Brown earth Brown earth Brown earth Brown earth</item>
+        <item>Cambisol Cambisol Cambisol Cambisol Cambisol Cambisol Cambisol Cambisol Cambisol Cambisol Cambisol Cambisol</item>
+        <item>Chernozem Chernozem Chernozem Chernozem Chernozem Chernozem Chernozem Chernozem Chernozem Chernozem Chernozem Chernozem</item>
+        <item>Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley Gley</item>
+        <item>Gleyic Chernozems Gleyic Chernozems Gleyic Chernozems Gleyic Chernozems Gleyic Chernozems Gleyic Chernozems</item>
+        <item>Luvisol Luvisol Luvisol Luvisol Luvisol Luvisol Luvisol Luvisol Luvisol Luvisol Luvisol Luvisol Luvisol Luvisol</item>
+        <item>Pararendzina Pararendzina Pararendzina Pararendzina Pararendzina Pararendzina Pararendzina Pararendzina Pararendzina Pararendzina</item>
+        <item>Rendzina Rendzina Rendzina Rendzina Rendzina Rendzina Rendzina Rendzina Rendzina Rendzina Rendzina Rendzina Rendzina Rendzina</item>
+    </string-array>
+
+</resources>

@@ -41,6 +41,17 @@
       accessToken: 'pk.eyJ1IjoiamFub3Zyb20iLCJhIjoiY2oyZGVtN3FyMDAzNzMzbzVmdTE3OGZnMCJ9.rBv_qZhMNRLn44Vb0PWGCg'
     }).addTo(map);
 
+    function style(feature) {
+        return {
+            fillColor: getColor(feature.properties.density),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+        };
+    }
+
 
     var pudy = L.tileLayer.wms("https://mapy.geology.cz/arcgis/services/Inspire/Pudni_typy/MapServer/WMSServer?", {
       layers: '1',
