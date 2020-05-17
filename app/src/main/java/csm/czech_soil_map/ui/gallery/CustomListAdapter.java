@@ -17,10 +17,10 @@ public class CustomListAdapter extends ArrayAdapter {
     //to reference the Activity
     private final Activity context;
 
-    //to store the list of countries
+    //to store the list of soils
     private final String[] nameArray;
 
-    //to store the list of countries
+    //to store the list of soils
     private final String[] infoArray;
 
 
@@ -35,14 +35,16 @@ public class CustomListAdapter extends ArrayAdapter {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        LayoutInflater inflater = context.getLayoutInflater();
-        View rowView = inflater.inflate(R.layout.listview_row, null, true);
+        LayoutInflater inflater = context.getLayoutInflater(); //najde inflater ktery vytvori nadpisy na zaklade xml
+        View rowView = inflater.inflate(R.layout.listview_row, null, true); //vytvor view_row
+
         TextView subheaderTextView = (TextView) rowView.findViewById(R.id.soil_name);
         TextView textTextView = (TextView) rowView.findViewById(R.id.soil_text);
+        TextView first_letter = (TextView) rowView.findViewById(R.id.first_letter);
 
         subheaderTextView.setText(nameArray[position]);
         textTextView.setText(infoArray[position]);
-
+        first_letter.setText(nameArray[position].charAt(0)); //najde prvni pismeno ve slove
         return rowView;
     }
 }
