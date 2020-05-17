@@ -2,11 +2,8 @@
 
 ## Introduction
 
-The app Czech Soil Map uses WMS service <a href= "http://www.geology.cz/extranet/mapy/mapy-online/wms">Soil Map 1 : 1 000 000 </a>
-
-WMS služba
-
-Wikipedia
+The app Czech Soil Map uses WMS service <a href= "http://www.geology.cz/extranet/mapy/mapy-online/wms">Soil Map 1 : 1 000 000</a> to show the soil type you are currently standing on. <br>
+In the Soil list you can find the list of soil according to the wikipedia.org.
 
 ## Overview
 <p align="center">
