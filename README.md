@@ -7,11 +7,11 @@ In the Soil list you can find the list of soils according to the wikipedia.org.
 
 ## Overview
 <p align="center">
-<img src="media/images/screen0.png" width="25%">
+<img src="media/images/screen0.png" width="30%">
 
-<img src="media/images/screen1.png" width="25%">
+<img src="media/images/screen1.png" width="30%">
 
-<img src="media/images/screen2.png" width="25%">
+<img src="media/images/screen2.png" width="30%">
 </p>
 
 <br><br>
