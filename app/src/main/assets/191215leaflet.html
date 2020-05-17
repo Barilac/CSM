@@ -110,7 +110,7 @@
           var status = xhr.status;
           if (status === 200) {
             popup.setLatLng(e.latlng)
-            .setContent(xhr.response.results[0].attributes["aktualizovaná legenda (2016)"])
+            .setContent(xhr.response.results[0].attributes["updated legend (2016)"])
             .openOn(map);
           } else {
 

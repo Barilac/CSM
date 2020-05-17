@@ -18,6 +18,11 @@
             android:icon="@drawable/ic_action_camera"
             android:title="@string/menu_license"
             />
+        <item
+            android:id="@+id/nav_acknowledgment"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Acknowledgment"
+            />
     </group>
 
 </menu>
