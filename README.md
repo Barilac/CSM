@@ -1,5 +1,9 @@
 # CSM – Czech Soil Map
 
+<img src="C:\Users\janov\Documents\Martin\Programování\Android\logo-var1.png">
+<br><br>
+<img src="C:\Users\janov\Documents\Martin\Programování\Android\ukazka1.png">
+
 [Release](https://github.com/Barilac/CSM/releases)
 <br><br>
 Acknowledgment: <br><br>
