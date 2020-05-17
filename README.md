@@ -1,3 +1,9 @@
 # CSM – Czech Soil Map
-23 02 2020
-We started developing android app focusing on soil map of the Czech Republic.
+
+
+
+
+
+Acknowledgment:
+This project was created at the Department of Archeology, Faculty of Arts, Charles University.
+Link to the websites:http://uprav.ff.cuni.cz/
