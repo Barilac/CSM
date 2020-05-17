@@ -22,5 +22,10 @@
         android:name="csm.czech_soil_map.ui.license.LicenseFragment"
         android:label="@string/menu_license"
         tools:layout="@layout/fragment_license" />
+    <fragment
+        android:id="@+id/nav_acknowledgment"
+        android:name="csm.czech_soil_map.ui.acknowledgment.AcknowledgmentFragment"
+        android:label="@string/menu_acknowledgment"
+        tools:layout="@layout/fragment_acknowledgment" />
 
 </navigation>

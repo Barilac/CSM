@@ -34,5 +34,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
         \n
     </string>
+    <string name="menu_acknowledgment">Acknowledgment</string>
+    <string name="acknowledgment_text">This project was created at the Department of Archeology, Faculty of Arts, Charles University.</string>
 
 </resources>
