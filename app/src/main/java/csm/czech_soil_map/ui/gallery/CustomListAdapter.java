@@ -44,7 +44,7 @@ public class CustomListAdapter extends ArrayAdapter {
 
         subheaderTextView.setText(nameArray[position]);
         textTextView.setText(infoArray[position]);
-        first_letter.setText(nameArray[position].charAt(0)); //najde prvni pismeno ve slove
+        first_letter.setText(nameArray[position].substring(0,2)); //najde prvni pismeno ve slove
         return rowView;
     }
 }
