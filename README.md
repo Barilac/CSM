@@ -17,7 +17,7 @@ In the Soil list you can find the list of soils according to the wikipedia.org.
 <br><br>
 You can download alpha version below:
 <br>
-<b>[Release]</b>(https://github.com/Barilac/CSM/releases)
+<b>[Release](https://github.com/Barilac/CSM/releases)</b>
 
 <br><br>
 Acknowledgment: <br><br>
