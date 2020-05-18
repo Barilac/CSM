@@ -14,12 +14,11 @@ In the Soil list you can find the list of soils according to the wikipedia.org.
 <img src="media/images/screen2.png" width="30%">
 </p>
 
-<br><br>
+## Download
 You can download alpha version below:
 <br>
 <b>[Release](https://github.com/Barilac/CSM/releases)</b>
 
-<br><br>
-Acknowledgment: <br><br>
+## Acknowledgment
 This project was created at the Department of Archeology, Faculty of Arts, Charles University.<br>
 Link to the websites: <i><a href="http://uprav.ff.cuni.cz">Department of Archaeology</a></i>
