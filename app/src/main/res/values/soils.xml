@@ -3,9 +3,13 @@
     <string-array name="soil_names">
         <item>Anthrosol</item>
         <item>Cambisol</item>
-        <item>Chernozem</item>
+        <item>Cambisol (Alumic)</item>
         <item>Gley</item>
+        <item>Histosols</item>
+        <item>Chernozem</item>
         <item>Luvisol</item>
+
+
 
     </string-array>
 
@@ -15,15 +19,28 @@
             Such soils can be formed from any parent soil, and are commonly found in areas where agriculture has been practised for centuries. Anthrosols can be found worldwide, though they tend to have different soil horizons in different regions. For example, in northwestern Europe anthrosols commonly have plaggic or terric (strongly affected by manure) horizons, and together they cover some 500,000 hectares.
         </item>
         <item>Cambisols are characterized by the absence of a layer of accumulated clay, humus, soluble salts, or iron and aluminum oxides. They differ from unweathered parent material in their aggregate structure, colour, clay content, carbonate content, or other properties that give some evidence of soil-forming processes. Because of their favourable aggregate structure and high content of weatherable minerals, they usually can be exploited for agriculture subject to the limitations of terrain and climate. Cambisols are the second most extensive soil group on Earth, occupying 12 percent of the total continental land area—mainly in boreal polar regions, in landscapes with high rates of erosion, and in regions of parent material resistant to clay movement. They are not common in humid tropical climates.</item>
-        <item>Chernozem (from Russian: chernozyom; "black soil") is a black-colored soil containing a high percentage of humus (4% to 16%) and high percentages of phosphoric acids, phosphorus, and ammonia. Chernozem is very fertile and can produce high agricultural yields with its high moisture storage capacity. Chernozems are also a Reference Soil Group of the World Reference Base for Soil Resources (WRB).</item>
+
+        <item>
+            Cambisols are characterized by the absence of a layer of accumulated clay, humus, soluble salts, or iron and aluminum oxides. They differ from unweathered parent material in their aggregate structure, colour, clay content, carbonate content, or other properties that give some evidence of soil-forming processes. Because of their favourable aggregate structure and high content of weatherable minerals, they usually can be exploited for agriculture subject to the limitations of terrain and climate. Cambisols are the second most extensive soil group on Earth, occupying 12 percent of the total continental land area—mainly in boreal polar regions, in landscapes with high rates of erosion, and in regions of parent material resistant to clay movement. They are not common in humid tropical climates.
+        \n\n
+            Cambisols (Alumic) are highly saturated with aluminum (more than 30%), agricultural soils have a saturation of the horizon Bv up to 30%, forest soils up to 20%.
+        </item>
+
         <item>A Gley is a wetland soil (hydric soil) that, unless drained, is saturated with groundwater for long enough periods to develop a characteristic gleyic colour pattern. This pattern is essentially made up of reddish, brownish, or yellowish colours at surfaces of soil particles and/or in the upper soil horizons mixed with greyish/blueish colours inside the peds and/or deeper in the soil. Gleysols are also known as Gleyzems, meadow soils, Aqu-suborders of Entisols, Inceptisols and Mollisols (USDA soil taxonomy), or as groundwater soils and hydro-morphic soils.
 \n\n
 Gleysols occur within a wide range of unconsolidated materials, mainly fluvial, marine and lacustrine sediments of Pleistocene or Holocene age, having basic to acidic mineralogy. They are found in depression areas and low landscape positions with shallow groundwater.</item>
+
+        <item>Histosol is a soil consisting primarily of organic materials. They are defined as having 40 centimetres or more of organic soil material in the upper 80 centimetres. Organic soil material has an organic carbon content (by weight) of 12 to 18 percent, or more, depending on the clay content of the soil. These materials include muck (sapric soil material), mucky peat (hemic soil material), or peat (fibric soil material). Aquic conditions or artificial drainage are required. Typically, Histosols have very low bulk density and are poorly drained because the organic matter holds water very well. Most are acidic and many are very deficient in major plant nutrients which are washed away in the consistently moist soil.
+           \n\n
+Histosols form whenever organic matter forms at a more rapid rate than it is destroyed. This occurs because of restricted drainage precluding aerobic decomposition, and the remains of plants and animals remain within the soil. Thus, Histosols are very important ecologically because they store large quantities of organic carbon. If accumulation continues for a long enough period, coal forms.
+            \n\n
+            Histosols are generally very difficult to cultivate because of the poor drainage and often low chemical fertility. However, Histosols formed on very recent glacial lands can often be very productive when drained and produce high-grade pasture for dairying or beef cattle. They can sometimes be used for fruit if carefully managed, but there is a great risk of the organic matter becoming dry powder and eroding under the influence of drying winds. A tendency towards shrinkage and compaction is also evident with crops.
+        </item>
+        <item>Chernozem (from Russian: chernozyom; "black soil") is a black-colored soil containing a high percentage of humus (4% to 16%) and high percentages of phosphoric acids, phosphorus, and ammonia. Chernozem is very fertile and can produce high agricultural yields with its high moisture storage capacity. Chernozems are also a Reference Soil Group of the World Reference Base for Soil Resources (WRB).</item>
         <item>Luvisol The mixed mineralogy, high nutrient content, and good drainage of these soils make them suitable for a wide range of agriculture, from grains to orchards to vineyards. Luvisols form on flat or gently sloping landscapes under climatic regimes that range from cool temperate to warm Mediterranean. Occupying just over 5 percent of the total continental land area on Earth, they are found typically in west-central Russia, the United States, central Europe, the Mediterranean basin, and southern Australia.
            \n\n
 Luvisols are technically characterized by a surface accumulation of humus overlying an extensively leached layer that is nearly devoid of clay and iron-bearing minerals. Below the latter lies a layer of mixed clay accumulation that has high levels of available nutrient ions comprising calcium, magnesium, sodium, or potassium. Luvisols are often associated with Cambisols. Albeluvisols are a related FAO soil group also exhibiting clay migration.
         </item>
-
     </string-array>
 
 </resources>
