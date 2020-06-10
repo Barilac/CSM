@@ -12,6 +12,8 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
             crossorigin=""></script>
+    <script src="https://unpkg.com/pouchdb@^5.2.0/dist/pouchdb.js"></script>
+    <script src="https://unpkg.com/leaflet.tilelayer.pouchdbcached@latest/L.TileLayer.PouchDBCached.js"></script>
     <style>
     #map {
       height: 100%;
@@ -33,10 +35,12 @@
 <div id="map"></div>
 
 <script>
-    var map = L.map('map').setView([42.35, -71.08], 13);
+    var map = L.map('map').setView([50.073658, 14.418540], 13);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFub3Zyb20iLCJhIjoiY2oyZGVtN3FyMDAzNzMzbzVmdTE3OGZnMCJ9.rBv_qZhMNRLn44Vb0PWGCg', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
+      useCache: true,
+      crossOrigin: true,
       id: 'mapbox.streets',
       accessToken: 'pk.eyJ1IjoiamFub3Zyb20iLCJhIjoiY2oyZGVtN3FyMDAzNzMzbzVmdTE3OGZnMCJ9.rBv_qZhMNRLn44Vb0PWGCg'
     }).addTo(map);
@@ -60,11 +64,21 @@
       transparent: true,
       attribution: "",
       opacity: 0.40,
-      tiled: true
+      tiled: true,
+      useCache: true,
+      crossOrigin: true
     }).addTo(map);
 
 
-
+    pudy.on('tilecachehit',function(ev){
+        console.log('Cache hit: ', ev.url);
+    });
+    pudy.on('tilecachemiss',function(ev){
+        console.log('Cache miss: ', ev.url);
+    });
+    pudy.on('tilecacheerror',function(ev){
+        console.log('Cache error: ', ev.tile, ev.error);
+    });
 
 
     // placeholders for the L.marker and L.circle representing user's current position and accuracy
