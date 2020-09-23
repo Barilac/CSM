@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="soil_names">
+        <item>Anthrosol</item>
+        <item>Cambisol</item>
+        <item>Černozem</item>
+        <item>Gley</item>
+        <item>Luvisol</item>
+
+    </string-array>
+
+    <string-array name="soil_texts">
+        <item>An anthrosol (or anthropogenic soil) in the World Reference Base for Soil Resources (WRB) is a type of soil that has been formed or heavily modified due to long-term human activity, such as from irrigation, addition of organic waste or wet-field cultivation used to create paddy fields.
+        \n\n
+            Such soils can be formed from any parent soil, and are commonly found in areas where agriculture has been practised for centuries. Anthrosols can be found worldwide, though they tend to have different soil horizons in different regions. For example, in northwestern Europe anthrosols commonly have plaggic or terric (strongly affected by manure) horizons, and together they cover some 500,000 hectares.
+        </item>
+        <item>Cambisols are characterized by the absence of a layer of accumulated clay, humus, soluble salts, or iron and aluminum oxides. They differ from unweathered parent material in their aggregate structure, colour, clay content, carbonate content, or other properties that give some evidence of soil-forming processes. Because of their favourable aggregate structure and high content of weatherable minerals, they usually can be exploited for agriculture subject to the limitations of terrain and climate. Cambisols are the second most extensive soil group on Earth, occupying 12 percent of the total continental land area—mainly in boreal polar regions, in landscapes with high rates of erosion, and in regions of parent material resistant to clay movement. They are not common in humid tropical climates.</item>
+        <item>Chernozem (from Russian: chernozyom; "black soil") is a black-colored soil containing a high percentage of humus (4% to 16%) and high percentages of phosphoric acids, phosphorus, and ammonia. Chernozem is very fertile and can produce high agricultural yields with its high moisture storage capacity. Chernozems are also a Reference Soil Group of the World Reference Base for Soil Resources (WRB).</item>
+        <item>A Gley is a wetland soil (hydric soil) that, unless drained, is saturated with groundwater for long enough periods to develop a characteristic gleyic colour pattern. This pattern is essentially made up of reddish, brownish, or yellowish colours at surfaces of soil particles and/or in the upper soil horizons mixed with greyish/blueish colours inside the peds and/or deeper in the soil. Gleysols are also known as Gleyzems, meadow soils, Aqu-suborders of Entisols, Inceptisols and Mollisols (USDA soil taxonomy), or as groundwater soils and hydro-morphic soils.
+\n\n
+Gleysols occur within a wide range of unconsolidated materials, mainly fluvial, marine and lacustrine sediments of Pleistocene or Holocene age, having basic to acidic mineralogy. They are found in depression areas and low landscape positions with shallow groundwater.</item>
+        <item>Luvisol The mixed mineralogy, high nutrient content, and good drainage of these soils make them suitable for a wide range of agriculture, from grains to orchards to vineyards. Luvisols form on flat or gently sloping landscapes under climatic regimes that range from cool temperate to warm Mediterranean. Occupying just over 5 percent of the total continental land area on Earth, they are found typically in west-central Russia, the United States, central Europe, the Mediterranean basin, and southern Australia.
+           \n\n
+Luvisols are technically characterized by a surface accumulation of humus overlying an extensively leached layer that is nearly devoid of clay and iron-bearing minerals. Below the latter lies a layer of mixed clay accumulation that has high levels of available nutrient ions comprising calcium, magnesium, sodium, or potassium. Luvisols are often associated with Cambisols. Albeluvisols are a related FAO soil group also exhibiting clay migration.
+        </item>
+
+    </string-array>
+
+</resources>
