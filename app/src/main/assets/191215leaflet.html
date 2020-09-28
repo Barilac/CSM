@@ -14,6 +14,7 @@
             crossorigin=""></script>
     <script src="https://unpkg.com/pouchdb@^5.2.0/dist/pouchdb.js"></script>
     <script src="https://unpkg.com/leaflet.tilelayer.pouchdbcached@latest/L.TileLayer.PouchDBCached.js"></script>
+
     <style>
     #map {
       height: 100%;
@@ -35,7 +36,7 @@
 <div id="map"></div>
 
 <script>
-    var map = L.map('map').setView([50.073658, 14.418540], 13);
+    var map = L.map('map', { zoomControl: false }).setView([50.073658, 14.418540], 13);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFub3Zyb20iLCJhIjoiY2oyZGVtN3FyMDAzNzMzbzVmdTE3OGZnMCJ9.rBv_qZhMNRLn44Vb0PWGCg', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
@@ -55,7 +56,6 @@
             fillOpacity: 0.7
         };
     }
-
 
     var pudy = L.tileLayer.wms("https://mapy.geology.cz/arcgis/services/Inspire/Pudni_typy/MapServer/WMSServer?", {
       layers: '1',
@@ -94,7 +94,7 @@
       var radius = e.accuracy / 2;
 
       current_position = L.marker(e.latlng).addTo(map)
-        .bindPopup("You are within " + radius.toFixed(2) + " meters from this point").openPopup();
+        .bindPopup("You are within " + radius.toFixed(2) + " meters from this point.").openPopup();
 
       currentLatLng = e.latlng;
       current_accuracy = L.circle(e.latlng, radius).addTo(map);

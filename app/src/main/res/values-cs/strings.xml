@@ -2,14 +2,14 @@
     <string name="app_name">Czech Soil Map</string>
     <string name="navigation_drawer_open">Otevři navigaci</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Czech Soil Map</string>
+    <string name="nav_header_title">Půdní mapa České republiky</string>
     <string name="nav_header_subtitle">janovskym@email.cz</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Nastavení</string>
 
     <string name="menu_map">Mapa</string>
     <string name="menu_soillist">Seznam půd</string>
-    <string name="menu_license">License</string>
+    <string name="menu_license">Licence</string>
 
     <string name="license_text">MIT License
 
@@ -34,7 +34,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
         \n
     </string>
-    <string name="menu_acknowledgment">Acknowledgment</string>
-    <string name="acknowledgment_text">This project was created at the Department of Archeology, Faculty of Arts, Charles University.</string>
+    <string name="menu_acknowledgment">Poděkování</string>
+    <string name="acknowledgment_text">Tato aplikace byla vytvořena na Ústavu pro archeologii, Filozofická fakulta, Univerzita Karlova.</string>
 
 </resources>

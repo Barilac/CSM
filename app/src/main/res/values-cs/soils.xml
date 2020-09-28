@@ -1,28 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="soil_names">
-        <item>Anthrosol</item>
-        <item>Cambisol</item>
-        <item>Černozem</item>
-        <item>Gley</item>
-        <item>Luvisol</item>
+
+        <item>Alpinské půdní formy</item>
+        <item>Antropogenní půdy</item>
+        <item>Černice</item>
+        <item>Černozemě</item>
+        <item>Černozemě s černicemi</item>
+        <item>Fluvizemě</item>
+        <item>Gleje</item>
+        <item>Hnědozemě</item>
+        <item>Kambizemě</item>
+        <item>Kambizemě dystrické</item>
+        <item>Kambizemě eutrofní</item>
+        <item>Kambizemě kyselé</item>
+        <item>Kambizemě s podzoly na terasových uloženinách</item>
+        <item>Kambizemě s rankery a litozeměmi</item>
+        <item>Kryptopodzoly s podzoly</item>
+        <item>Luvizemě s luvizeměmi oglejenými</item>
+        <item>Organozemě</item>
+        <item>Pararendziny</item>
+        <item>Pelozemě</item>
+        <item>Podzoly</item>
+        <item>Pseudogleje s kambizeměmi oglejenými</item>
+        <item>Regozemě, kambizemě  a podzoly arenické</item>
+        <item>Rendziny</item>
+        <item>Smonice</item>
+        <item>Šedozemě</item>
+        <item>Zasolené půdy</item>
+
 
     </string-array>
 
     <string-array name="soil_texts">
-        <item>An anthrosol (or anthropogenic soil) in the World Reference Base for Soil Resources (WRB) is a type of soil that has been formed or heavily modified due to long-term human activity, such as from irrigation, addition of organic waste or wet-field cultivation used to create paddy fields.
+
+        <item>Alpinské půdní formy se na území České republiky nacházejí nad horní hranicí lesa v pohořích (např. Krkonoše, Český les).</item>
+
+        <item>Antropogenní půdy jsou druhem půd, které byly vytvářeny nebo silně upravovány v důsledku dlouhodobé lidské činnosti, například zavlažováním či přidáváním organického odpadu. Mohou být vytvořeny z jakéhokoliv půdního typu a běžně se vyskytují v oblastech, kde se zemědělství praktikuje po staletí. Protože lze antropogenní půdy nalézt na celém světě, je mocnost a složení jejich půdních horizontů velmi variabilní</item>
+
+        <item>Černice se vytvářejí se z nezpevněných karbonátových či sorpčně nasycených substrátů v depresních polohách černozemních oblastí a na těžších substrátech. Černice jsou semihydromorfní, hlubokohumózní půdy (více než 30 cm); v podstatě se jedná o hydromorfní černozemě. Vyznačují se černickým horizontem Acn s vyšším obsahem humusu než u černozemí a redoximorfními znaky, jako např. bročky či skvrnitostí substrátu.
+            \n\n
+Původní vegetací jsou olšiny či vlhké louky. Hlavními půdotvornými procesy jsou intenzivní humifikace a glejový proces.</item>
         \n\n
-            Such soils can be formed from any parent soil, and are commonly found in areas where agriculture has been practised for centuries. Anthrosols can be found worldwide, though they tend to have different soil horizons in different regions. For example, in northwestern Europe anthrosols commonly have plaggic or terric (strongly affected by manure) horizons, and together they cover some 500,000 hectares.
+        Zdroj: https://cs.wikipedia.org/
+        <item>
+            Černozemě vznikly na kyprých karbonátových sedimentech: spraších, hlínách, vápnitých terciérních jílech a vápnitých píscích, v rovinatém terénu (do 300 m n. m.). Vyznačují se nedostatkem skeletu. Černozemě jsou půdy semiaridního až semihumidního kontinentálního klimatu s horkým létem a drsnou zimou. Hlavním pedogenetickým znakem je hromadění kvalitního humusu pod stepní až lesostepní vegetací v podmínkách nepromyvného až periodicky promyvného vodního režimu. Současně dochází ke slabému vyluhování, takže karbonáty se posunují směrem dolů a hromadí se na bázi horizontu A, díky čemuž vzniká kalcický horizont.
+    \n\n
+V typickém profilu černozemě je nejnápadnější mocný hnědavě tmavošedý až šedočerný humusový horizont (tzv. černozemní) sahající do hloubky 60 centimetrů, spolu s přechodným horizontem až do hloubky 100 cm. Struktura humusového horizontu je drobtovitá. Hluboký humusový horizont vzniká díky působení edafonu, přičemž díky působení makroedafonu dochází ke vzniku krotoviny – pronikání humusu do spodních horizontů. Půda obsahuje vysoký podíl volných prostorů. Mnohé černozemě mohou postrádat uhličitan vápenatý, ale mají dostatek dvojmocných bází, jejich reakce zůstává mírně alkalická nebo maximálně neutrální. Černozemě se vyznačují nízkým poměrem uhlíku ku dusíku.
+    \n\n
+Původní vegetací jsou habrové a subxerofilní teplomilné doubravy. Hlavním půdotvorným procesem je intenzivní humifikace probíhající pod stepní vegetací.
+    \n\n
+Stratigrafie půdního profilu: Ac – A/Ck – K – Ck nebo Ap – A – Ac – Ck
+    \n\n
+Subtypy: modální, vyluhovaná, karbonátová
+    \n\n
+V ČR se černozemě nacházejí v moravských úvalech, středním Polabí, dolním Povltaví a dolním Poohří. U nás, stejně jako v celé střední Evropě, jsou reliktní, vznikly v sušších, kontinentálnějších podnebných podmínkách než jsou dnešní.
+               \n\n
+        Zdroj: https://cs.wikipedia.org/
         </item>
-        <item>Cambisols are characterized by the absence of a layer of accumulated clay, humus, soluble salts, or iron and aluminum oxides. They differ from unweathered parent material in their aggregate structure, colour, clay content, carbonate content, or other properties that give some evidence of soil-forming processes. Because of their favourable aggregate structure and high content of weatherable minerals, they usually can be exploited for agriculture subject to the limitations of terrain and climate. Cambisols are the second most extensive soil group on Earth, occupying 12 percent of the total continental land area—mainly in boreal polar regions, in landscapes with high rates of erosion, and in regions of parent material resistant to clay movement. They are not common in humid tropical climates.</item>
-        <item>Chernozem (from Russian: chernozyom; "black soil") is a black-colored soil containing a high percentage of humus (4% to 16%) and high percentages of phosphoric acids, phosphorus, and ammonia. Chernozem is very fertile and can produce high agricultural yields with its high moisture storage capacity. Chernozems are also a Reference Soil Group of the World Reference Base for Soil Resources (WRB).</item>
-        <item>A Gley is a wetland soil (hydric soil) that, unless drained, is saturated with groundwater for long enough periods to develop a characteristic gleyic colour pattern. This pattern is essentially made up of reddish, brownish, or yellowish colours at surfaces of soil particles and/or in the upper soil horizons mixed with greyish/blueish colours inside the peds and/or deeper in the soil. Gleysols are also known as Gleyzems, meadow soils, Aqu-suborders of Entisols, Inceptisols and Mollisols (USDA soil taxonomy), or as groundwater soils and hydro-morphic soils.
+
+        <item>
+        Černice se vytvářejí se z nezpevněných karbonátových či sorpčně nasycených substrátů v depresních polohách černozemních oblastí a na těžších substrátech. Černice jsou semihydromorfní, hlubokohumózní půdy (více než 30 cm); v podstatě se jedná o hydromorfní černozemě. Vyznačují se černickým horizontem Acn s vyšším obsahem humusu než u černozemí a redoximorfními znaky, jako např. bročky či skvrnitostí substrátu.
+        \n\n
+        Původní vegetací jsou olšiny či vlhké louky. Hlavními půdotvornými procesy jsou intenzivní humifikace a glejový proces.
+        \n\n
+        Stratigrafie půdního profilu: Acn – ACg – Cg nebo Ap (g) – AG – CG
+        \n\n
+        Subtypy: modální, fluvická, glejová, arenická, pelická.
+                    \n\n
+        Zdroj: https://cs.wikipedia.org/
+        </item>
+
+        <item>Fluvizemě
+Název fluvizem je odvozen od latinského fluvius - řeka. Dříve zvány nivní půdy. Fluvizemě se nachází v nivách vodních toků a vznikají z povodňových sedimentů. Jsou charakteristické fluvickými znaky: vrstevnatostí a nepravidelností rozložení organických látek. Zrnitost fluvizemě závisí na rychlosti vodního toku a vzdálenosti od řečiště. Fluvizemě se vyznačují příznivými fyzikálními vlastnostmi, nacházejí se ve větších plochách, zejména nížinách, a půdotvorný proces je periodicky přerušován akumulační činností vodního toku; braunifikace je jen obtížně prokazatelná. Mimo období občasných záplav nejsou fluvizemě ovlivňovány nadbytečnou vlhkostí. Projevy glejového procesu jsou v půdním profilu patrné až hluboko. Obsah humusu je střední, avšak prohumóznění je značně hluboké.
 \n\n
-Gleysols occur within a wide range of unconsolidated materials, mainly fluvial, marine and lacustrine sediments of Pleistocene or Holocene age, having basic to acidic mineralogy. They are found in depression areas and low landscape positions with shallow groundwater.</item>
-        <item>Luvisol The mixed mineralogy, high nutrient content, and good drainage of these soils make them suitable for a wide range of agriculture, from grains to orchards to vineyards. Luvisols form on flat or gently sloping landscapes under climatic regimes that range from cool temperate to warm Mediterranean. Occupying just over 5 percent of the total continental land area on Earth, they are found typically in west-central Russia, the United States, central Europe, the Mediterranean basin, and southern Australia.
-           \n\n
-Luvisols are technically characterized by a surface accumulation of humus overlying an extensively leached layer that is nearly devoid of clay and iron-bearing minerals. Below the latter lies a layer of mixed clay accumulation that has high levels of available nutrient ions comprising calcium, magnesium, sodium, or potassium. Luvisols are often associated with Cambisols. Albeluvisols are a related FAO soil group also exhibiting clay migration.
+Původní vegetací jsou lužní lesy a jiné lužní porosty.
+\n\n
+Stratigrafie půdního profilu: O - Ah - M - C
+\n\n
+Subtypy: modální a glejová.
+        \n\n
+        Zdroj: https://cs.wikipedia.org/wiki/Fluvisol
         </item>
+
+        <item>Gleje
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Hnědozemě
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Kambizemě
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Kambizemě dystrické
+
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Kambizemě eutrofní
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Kambizemě kyselé
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Kambizemě s podzoly na terasových uloženinách
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Kambizemě s rankery a litozeměmi
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Kryptopodzoly s podzoly
+
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Luvizemě s luvizeměmi oglejenými
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Organozemě
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Pararendziny
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Pelozemě
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Podzoly
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Pseudogleje s kambizeměmi oglejenými
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Regozemě, kambizemě  a podzoly arenické
+
+        \n\n
+        Zdroj:
+        </item>
+
+        <item>Rendziny
+Rendzina je jedna z melanických půd. Vzniká na vápenatých a dolomitových substrátech. Je charakteristická velmi malým množstvím humusu. Příklady rendzinovitých půd jsou rendzina typická, rendzina litická, rendzina kambizemní, rendzina tanglová, rendzina sutinová a rendzina rubefikovaná.
+        \n\n
+        Zdroj: https://cs.wikipedia.org/wiki/Rendzina
+        </item>
+
+        <item>
+            Smonice je půda z třetihorních smektitických jílů (montmorillonitů) v mírně zvlněném reliéfu se suchým podnebím. Nadmořská výška jejich výskytu obvykle nepřesahuje 300 m n. m. Protože je smonice extrémně těžká, vyznačuje se výraznými objemovými změnami. Smonice mají vertické znaky (trhliny, klinovité pedy a šikém skluzné plochy); vyznačují se značně mocným (50 až i více jak 80 cm) tirsovým humusovým horizontem, který je černý až šedočerný a jedná se výborný mull podobný černozemnímu. Na přechodu do substrátu dochází k pozvolnému výskytu karbonátů. Smonice jsou chemicky příznivé, fyzikálně naopak silně nepříznivé.
+   \n\n
+Původní vegetací jsou teplomilné doubravy. Hlavním půdotvorným procesem je výrazná humifikace a vertisol-efekt, který spočívá v samomulčovací schopnosti půdního povrchu (rozpad zeminy na výrazné drobné strukturní elementy).
+   \n\n
+Stratigrafie půdního profilu: Ap – As – As/Ck
+   \n\n
+V České republice nalezneme smonice pouze v severozápadních Čechách a na jižní Moravě.</item>
+        \n\n
+        Zdroj: https://cs.wikipedia.org/
+        <item>Šedozemě se vyskytují lokálně na periferii rozšíření černozemí, kde je již vlhčí podnebí a výrazně se vážou na spraše. Šedozemě se vyznačují hlubokým šedým melanickým horizontem, jenž může být omezen pouze na současnou ornici, a luvickým horizontem s argilany. Možný je též výraznější eluviální horizont u půdy neovlivněné orbou. Původní vegetací je lesostep. Hlavním půdotvorným procesem je intenzivní humifikace a illimerizace.
+  \n\n
+Stratigrafie půdního profilu: Ap – Ame – Bth – Ck
+  \n\n
+Subtypy: modální, rubická, oglejená.</item>
+        \n\n
+        Zdroj: https://cs.wikipedia.org/
+        <item>Zasolování půd je jedním z půdotvorných procesů. Z pohledu zemědělství a environmentalistiky se může jednat i o negativní proces zhoršování půdních vlastností. V podstatě se jedná o akumulaci rozpustných solí. S tímto jevem se setkáváme v aridním prostředí. Je spojen s vyšším obsahem solí v půdním roztoku, či podzemních vodách. Při zdvihu podzemních vod a následném vypařování dojde ke krystalizaci solí v půdě a nebo na povrchu v podobě tak zvaného výkvětu. V suchém období se často tato půda rozpadá.
+ \n\n
+Problém zasolování půd, resp. podzemních vod je často spojován s nadměrným užíváním minerálních hnojiv a agrotechnikou. Při vyváženém poměru minerálních a statkových hnojiv a použití správné agrotechniky s ohledem na půdní typ tento problém nenastává.
+        \n\n
+        Zdroj: https://cs.wikipedia.org/wiki/Zasolov%C3%A1n%C3%AD_p%C5%AFd
+        </item>
+
 
     </string-array>
 
