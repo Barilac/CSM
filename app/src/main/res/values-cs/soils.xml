@@ -42,7 +42,8 @@
             \n\n
 Původní vegetací jsou olšiny či vlhké louky. Hlavními půdotvornými procesy jsou intenzivní humifikace a glejový proces.</item>
         \n\n
-        Zdroj: https://cs.wikipedia.org/
+        Zdroj: https://cs.wikipedia.org/wiki/%C4%8Cernice_(pedologie)
+        
         <item>
             Černozemě vznikly na kyprých karbonátových sedimentech: spraších, hlínách, vápnitých terciérních jílech a vápnitých píscích, v rovinatém terénu (do 300 m n. m.). Vyznačují se nedostatkem skeletu. Černozemě jsou půdy semiaridního až semihumidního kontinentálního klimatu s horkým létem a drsnou zimou. Hlavním pedogenetickým znakem je hromadění kvalitního humusu pod stepní až lesostepní vegetací v podmínkách nepromyvného až periodicky promyvného vodního režimu. Současně dochází ke slabému vyluhování, takže karbonáty se posunují směrem dolů a hromadí se na bázi horizontu A, díky čemuž vzniká kalcický horizont.
     \n\n
@@ -56,7 +57,7 @@ Subtypy: modální, vyluhovaná, karbonátová
     \n\n
 V ČR se černozemě nacházejí v moravských úvalech, středním Polabí, dolním Povltaví a dolním Poohří. U nás, stejně jako v celé střední Evropě, jsou reliktní, vznikly v sušších, kontinentálnějších podnebných podmínkách než jsou dnešní.
                \n\n
-        Zdroj: https://cs.wikipedia.org/
+        Zdroj: https://cs.wikipedia.org/wiki/%C4%8Cernosol
         </item>
 
         <item>
@@ -71,7 +72,7 @@ V ČR se černozemě nacházejí v moravských úvalech, středním Polabí, dol
         Zdroj: https://cs.wikipedia.org/
         </item>
 
-        <item>Fluvizemě
+        <item>
 Název fluvizem je odvozen od latinského fluvius - řeka. Dříve zvány nivní půdy. Fluvizemě se nachází v nivách vodních toků a vznikají z povodňových sedimentů. Jsou charakteristické fluvickými znaky: vrstevnatostí a nepravidelností rozložení organických látek. Zrnitost fluvizemě závisí na rychlosti vodního toku a vzdálenosti od řečiště. Fluvizemě se vyznačují příznivými fyzikálními vlastnostmi, nacházejí se ve větších plochách, zejména nížinách, a půdotvorný proces je periodicky přerušován akumulační činností vodního toku; braunifikace je jen obtížně prokazatelná. Mimo období občasných záplav nejsou fluvizemě ovlivňovány nadbytečnou vlhkostí. Projevy glejového procesu jsou v půdním profilu patrné až hluboko. Obsah humusu je střední, avšak prohumóznění je značně hluboké.
 \n\n
 Původní vegetací jsou lužní lesy a jiné lužní porosty.
@@ -83,60 +84,123 @@ Subtypy: modální a glejová.
         Zdroj: https://cs.wikipedia.org/wiki/Fluvisol
         </item>
 
-        <item>Gleje
-
+        <item>
+Název glej pochází z lidové ukrajinštiny a značí maz, klih.
+  \n\n
+Ze všech půdotvorných činitelů převládá u glejů nejvíce působení mělce pod povrchem ležící podzemní vody. Vzlínající podzemní voda podmiňuje v glejích nedostatek vzdušného kyslíku, a proto dochází v půdním profilu k redukčním pochodům,
+            při nichž se sloučeniny trojmocného železa redukují na sloučeniny železa dvojmocného. V důsledku těchto procesů se glejový horizont Gr vyznačuje zelenomodrými nebo okrově šedými barvami a nápadným skvrněním. V části půdního profilu nad horizontem Gr pak probíhají střídavě redukční a oxidační pochody podle toho, jak během roku kolísá hladina podzemní vody. Za vlhka je horizont Gr plastický, za sucha naopak velmi pevný.
+  \n\n
+Vedle horizontu Gr mohou mít gleje zrašelinělý humusový horizont akumulace organických látek. Gleje mají různá stádia vývoje podle mocnosti a hloubky výskytu horizontu Gr, existence oxidovaných partií a hydrogenních organických horizontů. Směrem do hloubky dochází k růstu hydromorfismu.
+  \n\n
+Gleje mají různou zrnitost a chemické vlastnosti, většinou jsou však kyselé až mírně kyselé s nenasyceným až mírně nasyceným sorpčním komplexem. Humusový horizont bývá tmavě šedohnedý prostoupený rezivě hnědými skvrnami a pruhy uspořádanými podle kořenů a bývá většinou horší kvality.
+  \n\n
+Glejové půdy jsou azonální, nacházejí se zejména na dně terénních depresí, v nejnižších částech širších niv nebo na úzkých nivách malých toků, a to zejména na nevápnitých vodních sedimentech. Často můžeme glej nalézt na rozhraní rašelinných půd.
+  \n\n
+Původní vegetací jsou lužní lesy a později kyselé louky. Hlavním půdotvorným procesem je glejový proces.
+  \n\n
+Stratigrafie půdního profilu: At (– T) – Gro – Gr
         \n\n
-        Zdroj:
+        Zdroj: https://cs.wikipedia.org/wiki/Glejosol
         </item>
 
-        <item>Hnědozemě
-
+        <item>
+Hnědozem je půdní typ typický svou hnědou barvou, od níž je odvozen jeho název. Vzniká půdotvorným procesem zvaným ilimerizace. Je méně kvalitní než černozemě (vyjma extrémně suchých období). Hnědozemě mají jen málo diferenciované vzájemné půdní horizonty.
+    \n\n
+Hnědozemě jsou typické pro rovinaté či jen mírně zvlněné oblasti, kde se dříve vyskytovaly spraše či sprašové hlíny vznikající převážně v dobách ledových v předpolí ledovců. Původní vegetační pokrytí bylo tvořeno listnatým lesem, který později ustoupil zemědělskému využití. V současnosti se jedná o široce využívanou zemědělskou půdu.
         \n\n
-        Zdroj:
+        Zdroj: https://cs.wikipedia.org/wiki/Hn%C4%9Bdozem
         </item>
 
-        <item>Kambizemě
-
+        <item>
+Kambizem je typ půdy, patřící mezi kambisol. Jedná se o nejrozšířenější půdní typ na území České republiky. Dříve byl nazýván hnědou (lesní) půdou. Název je odvozen z latinského slova cambiare, změnit.
+      \n\n
+Je vázána na silně členité reliéfy. Nachází se ve svažitých podmínkách v hlavních souvrstvích svahovin magmatitů a metamorfitů a zpevněných sedimentárních hornin. Mateční horniny jsou většinou nekarbonátové, skeletnaté, a proto je v půdní hmotě dostatek materiálu, který poměrně lehko podléhá zvětrávání, čímž se neustále uvolňují živiny, železo a jiné látky.
+      \n\n
+Kambizemě se vyskytují v mírném humidním klimatickém pásmu, a to především pod listnatými lesy. Vyznačují se kambickým hnědým metamorfovaným horizontem bez jílových povlaků. Co se týče zrnitosti jsou kambizemě nejčastěji hlinité. Karbonáty, pokud vůbec byly v půdní hmotě, jsou úplně vyluhované. Kambizemě jsou velice rozmanité z hlediska trofismu (minerálního bohatství půdy, jež podmiňuje nasycenost či nenasycenost půd a tím i jejich odolnost vůči okyselení a podzolizaci), zrnitosti, chemických i fyzikálních vlastností a forem nadložního humusu (mul s příměsí moderu). Kambizemě jsou převážně hluboké až velmi hluboké půdy a v jejich vlastnostech se odráží vliv půdotvorného substrátu a nadmořské výšky (tzv. bioklimatický činitel). S nadmořskou výškou stoupá hloubka půdy, zvyšuje se její kyprost, roste obsah humusu a hloubka prohumóznění, zároveň však větší množství srážek způsobuje větší vymývání. Kambizemě se vyznačují bohatým podílem volných prostorů mezi agregáty i uvnitř agregátů a vysokou biotickou aktivitou. Kambizemě jsou vývojově mladé půdy a vyvinuly se nejčastěji z rankerů a pararendzin.
+      \n\n
+Původní vegetací jsou listnaté lesy (dubohabrové až horské bučiny). Hlavními půdotvornými procesy jsou humifikace a sialitizace, tj. sialitické zvětrávání s tvorbou druhotného jílu bohatého na křemík, spojená s hnědnutím.
         \n\n
-        Zdroj:
+        Zdroj: https://cs.wikipedia.org/wiki/Kambizem
         </item>
 
-        <item>Kambizemě dystrické
-
+        <item>
+            Kambizem dystrická je značně nasycená hliníkem (více než 30 %), zemědělské půdy mají nasycenost horizontu Bv do 30 %, lesní půdy do 20% u lesních půd.
 
         \n\n
-        Zdroj:
+        Zdroj: https://cs.wikipedia.org/wiki/Kambizem
         </item>
 
-        <item>Kambizemě eutrofní
+        <item>Kambizemě eutrofní vznikají z ultrabazických substrátů
 
-        \n\n
-        Zdroj:
         </item>
 
         <item>Kambizemě kyselé
 
         \n\n
-        Zdroj:
+        Zdroj: https://cs.wikipedia.org/wiki/Kambizem
         </item>
 
-        <item>Kambizemě s podzoly na terasových uloženinách
-
+        <item>
+Terasa je v geologii a v geomorfologii podlouhlá a více méně vodorovná plošina pokrytá klastickými uloženinami říčního, jezerního, mořského, ledovcového aj. původu. Vzniká jednak erozí (vymíláním) koryta řeky, abrazí na březích jezer a moří, anebo akumulační činností vody.
+\n\n
+Nejčastější jsou říční terasy podél vodních toků, vzniklé tím, jak se vodní tok zařezával do říční nivy. Terasy jsou pak nad hladinou toku a obsahují starší, často křemičité sedimenty – štěrky, písky, jíly atd. Pokud se v údolí řeky vyskytuje několik úrovní říčních teras čili terasových stupňů, budou vrchní terasy starší než dolní. Jejich vznik odpovídá střídání akumulační (usazovací) a erozní (vymílací) činnosti řeky. Vysvětluje se kolísáním klimatu (teplých a chladných období, např. ledových dob), proměnami vodnatosti toku, kolísáním mořské hladiny, případně tektonickou činností (stoupáním či klesáním určité oblasti).
         \n\n
-        Zdroj:
+        Zdroj: https://cs.wikipedia.org/wiki/Terasa_(geologie)
         </item>
 
-        <item>Kambizemě s rankery a litozeměmi
-
+        <item>
+Leptosol je referenční třída půd v Taxonomickém klasifikačním systému půd České republiky. Název leptosol je odvozen od řeckého slova leptos, jež znamená primitivní, iniciální. Dříve byly nazývány jako nevyvinuté půdy. Jedná se o nevyvinutost z hlediska hloubky půdního profilu, obsahu skeletu a neexistence horizontu B.
         \n\n
-        Zdroj:
+Leptosoly vznikají z rozpadů pevných hornin; vyznačují se výraznou skeletovitostí až mělkostí půdního profilu. K litickému kontaktu dochází maximálně v hloubce 30 cm. Leptosoly vznikají na nových nebo vysoce odolných substrátech nebo retrográdním vývojem, kdy dochází ke vzniku nové půdy po erozním smytí půdy staré. Leptosoly jsou azonální půdy.
+        \n\n
+Do referenční třídy leptosoly náleží půdní typy: litozem, ranker, rendzina a pararendzina.
+            \n\n
+            \n\n
+            Litozem
+              \n\n
+Jedná se o slabě vyvinuté, surové a mělké půdy (do 10 cm) nacházející se na kompaktních horninách. Původním rostlinným krytem jsou většinou skalní stepi, zakrslé dřeviny a reliktní bory.
+       \n\n
+Litozemě se vyskytují na suchých půdách pahorkatin a hornatin. Jde o extrémně nepříznivé skeletovité půdy. Mohou však mít kvalitní humusový horizont, pak jsou ale nepříznivé díky vysychání či nedostatku vody (jsou vodopropustné).
+       \n\n
+Hlavním půdotvorným procesem je nevýrazná humifikace spojená buďto se slabým vnitropůdním zvětráváním nebo slabou podzolizací.
+       \n\n
+Stratigrafie půdního profilu: O – Ah – (Cr –) R
+       \n\n
+Subtypy: modální
+           \n\n
+            \n\n
+            Ranker
+             \n\n
+Název odvozen od rakouského lidového označení značícího „na příkrém svahu sídlící“. Vznikají ze skeletovitých zvětralých rozpadů silikátových hornin, které jinak mají pevnou, skalní povahu (žuly, ruly). Obsah skeletu je tím větší, čím je matečná hornina odolnější proti zvětrávání, např. na méně odolném pískovci má ranker méně skeletu, než na velmi odolném křemenci.
+ \n\n
+Rankery jsou výrazněji humifikované, je možná tvorba umbrických a melanických horizontů; jsou přechodem k vyvinutějším půdám. Chemické složení hornin má podstatný vliv na reakci, formu humusu a množství živin. Např. rankery na křemičitých horninách (křemencích, buližnících) jsou extrémně kyselé, naopak na bazických vyvřelinách jsou rankery poměrně bohaté vápníkem.
+ \n\n
+Původní vegetací jsou suťové lesy (lípa, javor, jasan, jilm). Rankery se nacházejí po celém území pahorkatin a hornatin, a to hlavně na strmých svazích, horských hřbetech či hřebenech a na vrcholech vyvýšenin.
+ \n\n
+Hlavním půdotvorným procesem je výrazná humifikace.
+ \n\n
+Stratigrafie půdního profilu: Ah – Cr – R
+ \n\n
+Subtypy: modální, umbrický, melanický, kambický, dystrický, podzolový, litický, suťový.
+        \n\n
+        Zdroj: https://cs.wikipedia.org/wiki/Leptosol
         </item>
 
-        <item>Kryptopodzoly s podzoly
-
-
+        <item>Kryptopodzoly mají stratigrafii O–Ah nebo Ap–Bsv–C, se seskvioxidickým spodickým horizontem, který má
+rezivou–žlutorezivou barvu. Vyznačuje se nízkou objemovou hmotností (níže 1,0 g.cm –3 ) a vysokou
+kyprostí v důsledku tvorby zaoblených mikroagregátů, vzniklých stmelením částic jílu a prachu
+uvolněným amorfním Feo. Má veškeré znaky spodického horizontu bez iluviální akumulace Fe.
+           \n\n
+Humusovou formou je nejčastěji mor a přechody k moderu. Jsou to půdy silně kyselé s velmi výrazným uvolněním volných oxidů Fe a Al a s
+vysokou nasyceností Al (> 30 %). Vytvářejí se v horských podmínkách v krycím a v hlavním souvrství
+přemístěných zvětralin lehčího zrnitostního složení (žul, pískovců apod.), (zčásti na píscích nižších
+poloh).
+                \n\n
+            Jejich areál rozšíření v horských podmínkách spadá do chladných a vlhkých oblastí
+klimatických regionů B9–10, Ko 8–9, Ku 7–8, v 6–7 lesním vegetačním stupni. Vznikly pod smíšenými
+porosty s převahou buku, smrku a jedle.
         \n\n
-        Zdroj:
+        Zdroj: http://www.uhul.cz/images/typologie/taxonomicky_klasifikacni_system_pud_v_cr.pdf
         </item>
 
         <item>Luvizemě s luvizeměmi oglejenými
@@ -196,15 +260,19 @@ Stratigrafie půdního profilu: Ap – As – As/Ck
    \n\n
 V České republice nalezneme smonice pouze v severozápadních Čechách a na jižní Moravě.</item>
         \n\n
-        Zdroj: https://cs.wikipedia.org/
-        <item>Šedozemě se vyskytují lokálně na periferii rozšíření černozemí, kde je již vlhčí podnebí a výrazně se vážou na spraše. Šedozemě se vyznačují hlubokým šedým melanickým horizontem, jenž může být omezen pouze na současnou ornici, a luvickým horizontem s argilany. Možný je též výraznější eluviální horizont u půdy neovlivněné orbou. Původní vegetací je lesostep. Hlavním půdotvorným procesem je intenzivní humifikace a illimerizace.
+        Zdroj: https://cs.wikipedia.org/wiki/Vertisol
+
+        <item>
+            Šedozemě se vyskytují lokálně na periferii rozšíření černozemí, kde je již vlhčí podnebí a výrazně se vážou na spraše. Šedozemě se vyznačují hlubokým šedým melanickým horizontem, jenž může být omezen pouze na současnou ornici, a luvickým horizontem s argilany. Možný je též výraznější eluviální horizont u půdy neovlivněné orbou. Původní vegetací je lesostep. Hlavním půdotvorným procesem je intenzivní humifikace a illimerizace.
   \n\n
 Stratigrafie půdního profilu: Ap – Ame – Bth – Ck
   \n\n
 Subtypy: modální, rubická, oglejená.</item>
         \n\n
-        Zdroj: https://cs.wikipedia.org/
-        <item>Zasolování půd je jedním z půdotvorných procesů. Z pohledu zemědělství a environmentalistiky se může jednat i o negativní proces zhoršování půdních vlastností. V podstatě se jedná o akumulaci rozpustných solí. S tímto jevem se setkáváme v aridním prostředí. Je spojen s vyšším obsahem solí v půdním roztoku, či podzemních vodách. Při zdvihu podzemních vod a následném vypařování dojde ke krystalizaci solí v půdě a nebo na povrchu v podobě tak zvaného výkvětu. V suchém období se často tato půda rozpadá.
+        Zdroj: https://cs.wikipedia.org/wiki/Luvisol
+
+        <item>
+            Zasolování půd je jedním z půdotvorných procesů. Z pohledu zemědělství a environmentalistiky se může jednat i o negativní proces zhoršování půdních vlastností. V podstatě se jedná o akumulaci rozpustných solí. S tímto jevem se setkáváme v aridním prostředí. Je spojen s vyšším obsahem solí v půdním roztoku, či podzemních vodách. Při zdvihu podzemních vod a následném vypařování dojde ke krystalizaci solí v půdě a nebo na povrchu v podobě tak zvaného výkvětu. V suchém období se často tato půda rozpadá.
  \n\n
 Problém zasolování půd, resp. podzemních vod je často spojován s nadměrným užíváním minerálních hnojiv a agrotechnikou. Při vyváženém poměru minerálních a statkových hnojiv a použití správné agrotechniky s ohledem na půdní typ tento problém nenastává.
         \n\n
