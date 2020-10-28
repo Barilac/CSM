@@ -60,8 +60,10 @@ public class HomeFragment extends Fragment {
                             callback.invoke(origin, true, false);
                         }
                     });
-
-                    mWebView.loadUrl("file:///android_asset/191215leaflet.html");
+                    if (getResources().getConfiguration().locale.getLanguage()== "cs")
+                        mWebView.loadUrl("file:///android_asset/191215leaflet_cs.html");
+                    else
+                        mWebView.loadUrl("file:///android_asset/191215leaflet.html");
                 } else {
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
