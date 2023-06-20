@@ -1,4 +1,4 @@
-package csm.czech_soil_map.ui.acknowledgment;
+package csm.czechsoilmap.ui.acknowledgment;
 
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -11,8 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-
-import csm.czech_soil_map.R;
+import csm.czechsoilmap.R;
 
 public class AcknowledgmentFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,

@@ -1,18 +1,19 @@
-package csm.czech_soil_map.ui.acknowledgment;
+package csm.czechsoilmap.ui.license;
 
+import androidx.annotation.AnyRes;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import csm.czech_soil_map.R;
+import csm.czechsoilmap.R;
 
-public class AcknowledgmentViewModel extends ViewModel {
+public class LicenseViewModel extends ViewModel {
 
     private MutableLiveData<Integer> mText;
 
-    public AcknowledgmentViewModel() {
+    public LicenseViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue(R.string.acknowledgment_text);
+        mText.setValue(R.string.license_text);
     }
 
     public LiveData<Integer> getText() {

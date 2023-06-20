@@ -7,24 +7,24 @@
 
     <fragment
         android:id="@+id/nav_map"
-        android:name="csm.czech_soil_map.ui.home.HomeFragment"
+        android:name="csm.czechsoilmap.ui.home.HomeFragment"
         android:label="@string/menu_map"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_soillist"
-        android:name="csm.czech_soil_map.ui.gallery.GalleryFragment"
+        android:name="csm.czechsoilmap.ui.gallery.GalleryFragment"
         android:label="@string/menu_soillist"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_license"
-        android:name="csm.czech_soil_map.ui.license.LicenseFragment"
+        android:name="csm.czechsoilmap.ui.license.LicenseFragment"
         android:label="@string/menu_license"
         tools:layout="@layout/fragment_license" />
     <fragment
         android:id="@+id/nav_acknowledgment"
-        android:name="csm.czech_soil_map.ui.acknowledgment.AcknowledgmentFragment"
+        android:name="csm.czechsoilmap.ui.acknowledgment.AcknowledgmentFragment"
         android:label="@string/menu_acknowledgment"
         tools:layout="@layout/fragment_acknowledgment" />
 
