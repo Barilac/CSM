@@ -3,7 +3,7 @@
 ## Introduction
 
 The app Czech Soil Map uses WMS service <a href= "https://geoportal.gov.cz/">Soil Map 1 : 250 000</a> to show the soil type you are currently standing on. <br>
-In the Soil list you can find the list of soils according to the wikipedia.org. The application also allows you to determine the current position according to the locator. We combine <i><a href="https://leafletjs.com/">leaflet</a></i><br> and WMS for active use in the field. Suitable for orientation when collecting soil and ecological samples.
+In the Soil list you can find the list of soils according to the wikipedia.org. The application also allows you to determine the current position according to the locator. We combine <i><a href="https://leafletjs.com/">leaflet</a></i> and WMS for active use in the field. Suitable for orientation when collecting soil and ecological samples.
 
 
 ## Overview
