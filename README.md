@@ -24,7 +24,7 @@ You can download alpha version below:
 
 ## Acknowledgment
 This project was created at the Department of Archeology, Faculty of Arts, Charles University.<br>
-Link to the websites:<br>
+Link to the websites used to create the application:<br>
 <i><a href="http://uprav.ff.cuni.cz">Department of Archaeology</a></i><br>
 <i><a href="http://geoportal.gov.cz">WMS layer: Národní geoportál INSPIRE</a></i><br>
 <i><a href="https://github.com/domoritz/leaflet-locatecontrol">Locate control</a></i>
