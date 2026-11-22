@@ -1,97 +1,78 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-    <title>Soil Map</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.css" />
-
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-            crossorigin=""></script>
-    <script src="https://unpkg.com/pouchdb@^5.2.0/dist/pouchdb.js"></script>
-    <script src="https://unpkg.com/leaflet.tilelayer.pouchdbcached@latest/L.TileLayer.PouchDBCached.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
-    <style>
-    #map {
-      height: 100%;
-    }
-
-    /* Optional: Makes the sample page fill the window. */
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-
-</head>
-
-<body>
-
-<div id="map"></div>
-
-<script>
-    var map = L.map('map', { zoomControl: false }).setView([50.073658, 14.418540], 13);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 25,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-map.addControl(
-  L.control.locate({
-    locateOptions: {
-      maxZoom: 13
-    }
-  })
-);
-
-    function style(feature) {
-        return {
-            fillColor: getColor(feature.properties.density),
-            weight: 2,
-            opacity: 1,
-            color: 'white',
-            dashArray: '3',
-            fillOpacity: 0.7
-        };
-    }
-
-
-    var pudy = L.tileLayer.wms("https://geoportal.gov.cz/ArcGIS/services/CENIA/cenia_typy_pud/MapServer/WmsServer?", {
-      layers: '0,1',
-      format: 'image/png',
-      version: '1.3.0',
-      transparent: true,
-      attribution: "",
-      opacity: 0.50,
-      tiled: true,
-      useCache: true,
-      crossOrigin: true
-    }).addTo(map);
-
-
-
-    pudy.on('tilecachehit',function(ev){
-        console.log('Cache hit: ', ev.url);
-    });
-    pudy.on('tilecachemiss',function(ev){
-        console.log('Cache miss: ', ev.url);
-    });
-    pudy.on('tilecacheerror',function(ev){
-        console.log('Cache error: ', ev.tile, ev.error);
-    });
-
-
-
-
-  </script>
-
-</body>
-
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#f3f5f6">
+    <title>Czech Soil Map</title>
+    <!-- Soil Map Field v1.0.1: repaired initialization and CDN fallback -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous" onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css';this.removeAttribute('integrity')">
+    <style>*{box-sizing:border-box}html,body,#map{height:100%;width:100%;margin:0}body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#17202a}#map{z-index:0;background:#e5e8e6}.leaflet-control-attribution{font-size:9px!important}.toolbar{position:fixed;z-index:1000;top:max(10px,env(safe-area-inset-top));left:10px;right:10px;display:flex;flex-wrap:wrap;gap:6px;pointer-events:none}.toolbar>*{pointer-events:auto}button,select,.toggle{background:#fff;border:1px solid #a8b2b7;border-radius:9px;padding:9px 11px;color:#17202a;font-size:13px;min-height:38px;box-shadow:0 2px 7px #0002}button:active{background:#eee}.toggle{display:flex;align-items:center;gap:4px;padding:4px 9px}input[type=checkbox]{width:17px;height:17px}.opacitybox{display:flex;align-items:center;gap:5px;background:white;border-radius:8px;padding:0 8px;box-shadow:0 2px 6px #0002}.opacitybox input{width:68px}.panel{position:fixed;z-index:1100;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));max-height:min(65vh,520px);overflow:auto;background:#fff;border:1px solid #dce0e2;border-radius:13px;box-shadow:0 4px 30px #0003;padding:15px;display:none}.panel.show{display:block}.panel h2{font-size:18px;margin:0 28px 7px 0}.panel h3{font-size:14px;margin:11px 0 7px}.panel p{margin:5px 0;font-size:13px;line-height:1.4}.panel .muted,.muted{color:#57666b}.panel .bad{color:#a32c22}.panel .good{color:#135c39}.kv{display:grid;grid-template-columns:minmax(105px,35%) 1fr;gap:6px 10px;padding:9px 0;border-bottom:1px solid #e9ecee;font-size:13px;word-break:break-word}.kv label{color:#53616b}.row{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:10px}.row button{font-weight:600}.close{position:absolute;top:8px;right:8px;border:0;box-shadow:none;font-size:20px}.panel textarea{width:100%;min-height:58px;padding:9px;font:inherit;font-size:13px;border:1px solid #bdc7cc;border-radius:8px;resize:vertical}#status{position:fixed;z-index:1001;top:75px;left:12px;right:12px;pointer-events:none;display:none;text-align:center}#status span{display:inline-block;background:#17202ae8;color:white;border-radius:9px;padding:7px 10px;font-size:12px;max-width:95%}#status.visible{display:block}#pointsList{max-height:38vh;overflow:auto}#pointsList button{margin-left:8px;padding:5px 7px;min-height:28px}.dot{width:13px;height:13px;border-radius:50%;background:#d23529;border:2px solid #fff;box-shadow:0 0 0 1px #333}.tiny{font-size:11px!important}.bottomright{position:fixed;z-index:800;right:10px;bottom:12px;pointer-events:none;font-size:11px;background:#ffffffe8;padding:3px 6px;border-radius:5px}@media(max-width:600px){.toolbar{gap:4px}.toolbar button,.toolbar select{padding:7px 8px;font-size:12px}.opacitybox{font-size:12px}.panel{max-height:68vh}}</style></head>
+<body><main id="map" aria-label="Map"></main>
+<div class="toolbar"><select id="baseMap" aria-label="Basemap"><option value="osm">Streets</option><option value="ortho">Orthophoto CUZK</option></select><label class="toggle"><input type="checkbox" id="soil" checked>CGS soils</label><label class="toggle optional"><input type="checkbox" id="archive">Archive</label><label class="toggle optional"><input type="checkbox" id="geology">Geology</label><div class="opacitybox"><span>Opacity</span><input id="opacity" type="range" min="0" max="100" value="68"></div><button id="gpsBtn">GPS</button><button id="gpsCenterBtn" title="GPS center">◎</button><button id="pointsBtn">Points</button><button id="langBtn">EN</button></div>
+<div id="status" role="status"></div>
+<section id="infoPanel" class="panel"><button class="close" data-close aria-label="Close">×</button><h2>Soil identification</h2><div id="infoContent"></div><h3>Field note</h3><textarea id="noteInput" placeholder="..."></textarea><div class="row"><button id="saveBtn">Save point</button><button data-close>Close</button></div></section>
+<section id="pointsPanel" class="panel"><button class="close" data-close aria-label="Close">×</button><h2>Field observations</h2><div id="pointsList"></div><div class="row"><button id="csvBtn">CSV</button><button id="geoBtn">GeoJSON</button><button data-close>Close</button></div></section>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+<script>if(!window.L){document.write('<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"><\/script>')}</script>
+<script>(function(){'use strict';
+const LANG=document.documentElement.lang==='en'?'en':'cs';
+window.addEventListener('error',function(event){
+ const el=document.getElementById('status');
+ if(el){el.className='visible';el.innerHTML='<span>'+(LANG==='cs'?'Chyba spuštění mapy: ':'Map initialization error: ')+String(event.message||'JavaScript').replace(/[&<>]/g,'')+'</span>';}
+});
+const STR={
+cs:{title:'Půdní mapa ČR',base:'Podklad',street:'Ulice',ortho:'Ortofoto',soils:'Půdy ČGS 1 : 50 000',archive:'Archiv 1 : 50 000',geology:'Geologie',opacity:'Krytí',gps:'GPS',points:'Body',wait:'Načítám půdní jednotku…',network:'Služba ČGS neodpověděla. Zkontrolujte internet; půdní typ nelze bezpečně určit.',none:'Na tomto místě není dostupný dotazovatelný polygon ČGS 1 : 50 000. Zobrazená archivní mapa není automaticky identifikovatelná.',unknown:'Neuvedeno',soilInfo:'Identifikace půdy',dominant:'Dominantní jednotka TKSP',secondary:'Doprovodná jednotka',tertiary:'Doplňková jednotka',wrb:'WRB 2022, dominantní',wrb2:'WRB 2022, doprovodná',wrb3:'WRB 2022, doplňková',substrate:'Půdotvorný substrát',substrate2:'Substrát podle TKSP',coords:'Souřadnice WGS 84',mapScale:'Mapový zdroj',note:'Terénní poznámka',save:'Uložit terénní bod',close:'Zavřít',field:'Terénní záznamy',nobody:'Zatím nemáte uložené body.',csv:'Export CSV',geojson:'Export GeoJSON',delete:'Smazat',locError:'Polohu nelze zjistit. Povolte přístup k GPS a zkontrolujte zapnutí určování polohy.',locAccuracy:'Přesnost GPS',gpsOn:'Sledování GPS',gpsOff:'GPS zastaveno',gpsNotSoil:'Přesnost GPS není přesností půdní mapy.',disclaimer:'Půdní mapa má měřítko 1 : 50 000. Polygony vyjadřují mapové jednotky, nikoli terénně potvrzený půdní profil.',saved:'Bod uložen v zařízení.',download:'Export připraven.',src:'ČGS, digitální půdní mapa 1 : 50 000',check:'Prověřte terénním profilem.',mapHint:'Klepněte do mapy pro identifikaci půdy.',gpsCenter:'Přejít na GPS',popupEmpty:'Bez výsledku',delConfirm:'Smazat tento bod?',underlying:'Vrstva je podrobnější jen vizuálně; zdrojová mapa zůstává 1 : 50 000.',service:'Online zdroj ČGS',off:'Vypnuto'},
+en:{title:'Czech Soil Map',base:'Basemap',street:'Streets',ortho:'Orthophoto',soils:'CGS soils 1:50,000',archive:'Archive 1:50,000',geology:'Geology',opacity:'Opacity',gps:'GPS',points:'Points',wait:'Querying soil unit…',network:'CGS service did not respond. Check your connection; soil classification cannot be confirmed.',none:'No queryable CGS 1:50,000 polygon at this location. Historical raster maps cannot be identified automatically.',unknown:'Not provided',soilInfo:'Soil identification',dominant:'Dominant Czech soil unit (TKSP)',secondary:'Codominant soil unit',tertiary:'Associated soil unit',wrb:'WRB 2022 dominant',wrb2:'WRB 2022 codominant',wrb3:'WRB 2022 associated',substrate:'Soil parent material',substrate2:'Parent material (TKSP)',coords:'Coordinates WGS 84',mapScale:'Map source',note:'Field note',save:'Save observation',close:'Close',field:'Field observations',nobody:'No saved observations yet.',csv:'Export CSV',geojson:'Export GeoJSON',delete:'Delete',locError:'Location unavailable. Check Android location permission and GPS settings.',locAccuracy:'GPS accuracy',gpsOn:'GPS tracking',gpsOff:'GPS stopped',gpsNotSoil:'GPS accuracy is not the accuracy of the soil map.',disclaimer:'Source scale is 1:50,000. Polygons describe mapped soil associations and do not replace examination of a soil profile.',saved:'Observation saved on this device.',download:'Export prepared.',src:'CGS, digital soil map 1:50,000',check:'Verify in a soil profile.',mapHint:'Tap the map to identify the soil.',gpsCenter:'Center on GPS',popupEmpty:'No result',delConfirm:'Delete this observation?',underlying:'Zooming does not increase original map resolution (1:50,000).',service:'CGS live service',off:'Off'}};
+const t=k=>STR[LANG][k]||k; const $=id=>document.getElementById(id);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const SERVICE='https://mapy.geology.cz/arcgis/rest/services/Pudy/pudni_typy50/MapServer';
+const GEOLOGY='https://mapy.geology.cz/arcgis/rest/services/Geologie/GEOCR50_mobil/MapServer';
+const ARCHIVE='https://mapy.geology.cz/arcgis/rest/services/Pudy/pudni_mapa50_rastr/MapServer';
+if(!window.L){$('status').className='visible';$('status').innerHTML='<span>Leaflet could not load. An internet connection is required.</span>';return;}
+document.title=t('title');
+const map=L.map('map',{zoomControl:false,preferCanvas:true}).setView([50.073658,14.41854],12);L.control.scale({imperial:false,metric:true,position:'bottomleft'}).addTo(map);L.control.zoom({position:'bottomright'}).addTo(map);
+const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:20,maxNativeZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
+let baseTileErrors=0;
+osm.on('tileerror',()=>{if(++baseTileErrors===3)notify(LANG==='cs'?'Podklad OpenStreetMap se nenačítá. Zkuste ortofoto nebo připojení k internetu.':'OpenStreetMap tiles failed. Try orthophoto or check your connection.',7000)});
+osm.on('tileload',()=>baseTileErrors=0);
+const ortho=L.tileLayer('https://ags.cuzk.cz/arcgis1/rest/services/ORTOFOTO_WM/MapServer/tile/{z}/{y}/{x}',{maxZoom:20,maxNativeZoom:19,attribution:'© ČÚZK'});
+const localProjectionLimit=20037508.342789244;
+const ArcGISLayer=L.TileLayer.extend({initialize:function(base,extra,opts){this.serviceBase=base;this.extra=extra||'';L.TileLayer.prototype.initialize.call(this,'',opts)},getTileUrl:function(coords){const span=2*localProjectionLimit/Math.pow(2,coords.z);let xmin=-localProjectionLimit+coords.x*span,ymax=localProjectionLimit-coords.y*span;let bbox=[xmin,ymax-span,xmin+span,ymax].join(',');return this.serviceBase+'/export?bbox='+encodeURIComponent(bbox)+'&bboxSR=3857&imageSR=3857&size=256%2C256&dpi=96&format=png32&transparent=true&f=image'+this.extra}});
+const archive=new ArcGISLayer(ARCHIVE,'',{attribution:'© ČGS (archiv)',opacity:.52,maxZoom:20,maxNativeZoom:17,minZoom:8});
+const soil=new ArcGISLayer(SERVICE,'&layers=show%3A1',{attribution:'© ČGS',opacity:.68,maxZoom:20,maxNativeZoom:17,minZoom:8}).addTo(map);
+const geology=new ArcGISLayer(GEOLOGY,'&layers=show%3A0%2C1%2C2',{attribution:'© ČGS',opacity:.55,maxZoom:20,maxNativeZoom:17,minZoom:8});
+let warningCount=0;soil.on('tileerror',()=>{if(++warningCount===4)notify(t('network'),4500)});soil.on('tileload',()=>warningCount=0);
+const layerState={soil,archive,geology};
+$('baseMap').onchange=()=>{if($('baseMap').value==='ortho'){map.removeLayer(osm);ortho.addTo(map)}else{map.removeLayer(ortho);osm.addTo(map)}};
+for(const key in layerState){$(key).onchange=()=>{const layer=layerState[key];$(key).checked?layer.addTo(map):map.removeLayer(layer)}}
+$('opacity').oninput=()=>{soil.setOpacity(Number($('opacity').value)/100)};
+let statusTimer;function notify(s,ms=2600){$('status').innerHTML='<span>'+esc(s)+'</span>';$('status').className='visible';clearTimeout(statusTimer);statusTimer=setTimeout(()=>$('status').className='',ms)}
+notify(t('mapHint'));let active=null;let currentMarker=null;let gpsMarker=null,gpsCircle=null,gpsAccuracy=null,gpsWatcher=null,lastGPS=null;let queryCounter=0;
+function kv(k,v){if(v===null||v===undefined||String(v).trim()==='')return '';return '<div class="kv"><label>'+esc(k)+'</label><div>'+esc(v)+'</div></div>'}
+const fields=['p1_jednot','p2_jednot','p3_jednot','sg_txt','n_txt','p1_wrb22_sign','p1_wrb22_soilname','p1_wrb22_note','p2_wrb22_sign','p2_wrb22_soilname','p3_wrb22_sign','p3_wrb22_soilname','index_kart_mapa'];
+function remoteViaFetch(url){const controller=new AbortController();const id=setTimeout(()=>controller.abort(),10000);return fetch(url,{signal:controller.signal}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).finally(()=>clearTimeout(id))}
+let jsonpNum=0;function remoteViaJsonp(url){return new Promise((resolve,reject)=>{const callback='soilmap_callback_'+(++jsonpNum);const sc=document.createElement('script');let ended=false;const cleanup=()=>{ended=true;clearTimeout(timer);delete window[callback];sc.remove()};window[callback]=data=>{if(ended)return;cleanup();resolve(data)};sc.onerror=()=>{if(ended)return;cleanup();reject(Error('JSONP'))};const timer=setTimeout(()=>{if(ended)return;cleanup();reject(Error('timeout'))},12000);sc.src=url+'&callback='+encodeURIComponent(callback);document.head.appendChild(sc)})}
+async function querySoil(lat,lon){const p=new URLSearchParams({f:'json',geometry:lon.toFixed(8)+','+lat.toFixed(8),geometryType:'esriGeometryPoint',inSR:'4326',spatialRel:'esriSpatialRelIntersects',outFields:fields.join(','),returnGeometry:'false',outSR:'4326'});const url=SERVICE+'/1/query?'+p.toString();try{return await remoteViaFetch(url)}catch(ex){return await remoteViaJsonp(url)}}
+function showPanel(id){for(const panel of document.querySelectorAll('.panel'))panel.classList.remove('show');$(id).classList.add('show')}
+function setMarker(latlng){if(currentMarker)map.removeLayer(currentMarker);currentMarker=L.circleMarker(latlng,{radius:7,color:'#111',weight:2,fillColor:'#fb453a',fillOpacity:1}).addTo(map)}
+async function inspect(latlng,source="map"){setMarker(latlng);const lat=latlng.lat,lon=latlng.lng;active={lat,lon,attrs:null,date:new Date().toISOString(),source:source,gpsAccuracy:source==="gps"&&lastGPS?lastGPS.accuracy:null};const sequence=++queryCounter;showPanel('infoPanel');$('infoContent').innerHTML='<p>'+esc(t('wait'))+'</p>';$('noteInput').value='';$('saveBtn').disabled=true;
+try{const data=await querySoil(lat,lon);if(sequence!==queryCounter)return;if(data.error)throw Error(data.error.message||'ArcGIS error');const attrs=data.features&&data.features.length?data.features[0].attributes:null;active.attrs=attrs;
+let html=kv(t('coords'),lat.toFixed(7)+', '+lon.toFixed(7));if(active.gpsAccuracy!=null)html+=kv(t('locAccuracy'),'±'+Math.round(active.gpsAccuracy)+' m ('+t('gpsNotSoil')+')');html+=kv(t('mapScale'),t('src'));
+if(attrs){html+=kv(t('dominant'),attrs.p1_jednot);html+=kv(t('secondary'),attrs.p2_jednot);html+=kv(t('tertiary'),attrs.p3_jednot);html+=kv(t('wrb'),[attrs.p1_wrb22_sign,attrs.p1_wrb22_soilname].filter(Boolean).join(' · '));html+=kv(t('wrb2'),[attrs.p2_wrb22_sign,attrs.p2_wrb22_soilname].filter(Boolean).join(' · '));html+=kv(t('wrb3'),[attrs.p3_wrb22_sign,attrs.p3_wrb22_soilname].filter(Boolean).join(' · '));html+=kv(t('substrate'),attrs.sg_txt);html+=kv(t('substrate2'),attrs.n_txt);html+=kv('Map sheet',attrs.index_kart_mapa);html+='<p class="muted tiny">'+esc(t('disclaimer'))+'</p>'}else html+='<p class="bad">'+esc(t('none'))+'</p>';
+$('infoContent').innerHTML=html;
+}catch(error){if(sequence!==queryCounter)return;active.error=String(error);$('infoContent').innerHTML=kv(t('coords'),lat.toFixed(7)+', '+lon.toFixed(7))+'<p class="bad">'+esc(t('network'))+'</p>';}finally{if(sequence===queryCounter)$('saveBtn').disabled=false}}
+map.on('click',e=>inspect(e.latlng));
+function gpsUpdated(pos){const lat=pos.coords.latitude,lon=pos.coords.longitude;gpsAccuracy=Number.isFinite(pos.coords.accuracy)?pos.coords.accuracy:null;lastGPS={lat,lon,accuracy:gpsAccuracy};if(gpsMarker){gpsMarker.setLatLng([lat,lon]);gpsCircle.setLatLng([lat,lon]);gpsCircle.setRadius(gpsAccuracy||0)}else{gpsCircle=L.circle([lat,lon],{radius:gpsAccuracy||0,color:'#147d9e',weight:1,fillColor:'#1ea1d0',fillOpacity:.08,interactive:false}).addTo(map);gpsMarker=L.circleMarker([lat,lon],{radius:7,color:'#fff',weight:2,fillColor:'#08779c',fillOpacity:1}).addTo(map)}$('gpsBtn').textContent='GPS '+(gpsAccuracy===null?'':'±'+Math.round(gpsAccuracy)+' m');}
+$('gpsBtn').onclick=()=>{if(gpsWatcher!==null){navigator.geolocation.clearWatch(gpsWatcher);gpsWatcher=null;$('gpsBtn').textContent=t('gps');notify(t('gpsOff'));return}if(!navigator.geolocation){notify(t('locError'),5000);return}gpsWatcher=navigator.geolocation.watchPosition(pos=>{const first=!lastGPS;gpsUpdated(pos);if(first)map.setView([pos.coords.latitude,pos.coords.longitude],Math.max(map.getZoom(),15))},err=>{notify(t('locError')+' ('+err.code+')',5000);gpsWatcher=null;$('gpsBtn').textContent=t('gps')},{enableHighAccuracy:true,maximumAge:0,timeout:20000});notify(t('gpsOn')+' · '+t('gpsNotSoil'),4000)};
+$('gpsCenterBtn').onclick=()=>{if(lastGPS){map.setView([lastGPS.lat,lastGPS.lon],16);inspect(L.latLng(lastGPS.lat,lastGPS.lon),"gps")}else notify(t('locError'))};
+const STORAGE='soilmap_field_notes_v2';let points=[];try{const raw=JSON.parse(localStorage.getItem(STORAGE)||'[]');if(Array.isArray(raw))points=raw}catch(e){};function persist(){try{localStorage.setItem(STORAGE,JSON.stringify(points))}catch(e){notify('Local storage unavailable',5000)}}
+$('saveBtn').onclick=()=>{if(!active)return;let p={id:Date.now()+'_'+Math.random().toString(36).slice(2,7),time:new Date().toISOString(),lat:active.lat,lon:active.lon,note:$('noteInput').value.trim(),gpsAccuracy_m:active.gpsAccuracy,coordinate_source:active.source,queryError:active.error||null,soil:active.attrs};points.push(p);persist();plotPoints();notify(t('saved'));showPanel('infoPanel')};
+const pointLayer=L.layerGroup().addTo(map);function plotPoints(){pointLayer.clearLayers();points.forEach(p=>{L.circleMarker([p.lat,p.lon],{radius:5,color:'#fff',fillColor:'#cf6521',fillOpacity:1,weight:1}).addTo(pointLayer).bindTooltip(esc(p.note||p.soil?.p1_jednot||new Date(p.time).toLocaleString()))})}
+function formatLocalDate(d){try{return new Date(d).toLocaleString(LANG==='cs'?'cs-CZ':'en-GB')}catch(e){return d}}
+function listPoints(){let h='';if(!points.length)h='<p>'+esc(t('nobody'))+'</p>';points.slice().reverse().forEach(p=>{const title=p.soil?.p1_jednot||t('unknown');h+='<div class="kv"><div><b>'+esc(title)+'</b><p class="tiny muted">'+esc(formatLocalDate(p.time))+'</p></div><div><div>'+p.lat.toFixed(6)+', '+p.lon.toFixed(6)+'</div><div>'+esc(p.note||'')+'</div><div class="row"><button data-center="'+esc(p.id)+'">'+esc(t('gpsCenter'))+'</button><button data-delete="'+esc(p.id)+'">'+esc(t('delete'))+'</button></div></div></div>'});$('pointsList').innerHTML=h;for(const b of $('pointsList').querySelectorAll('[data-center]'))b.onclick=()=>{const p=points.find(p=>p.id===b.dataset.center);if(p){hidePanels();map.setView([p.lat,p.lon],16);inspect(L.latLng(p.lat,p.lon))}};for(const b of $('pointsList').querySelectorAll('[data-delete]'))b.onclick=()=>{if(confirm(t('delConfirm'))){points=points.filter(p=>p.id!==b.dataset.delete);persist();plotPoints();listPoints()}}}
+$('pointsBtn').onclick=()=>{listPoints();showPanel('pointsPanel')};function hidePanels(){document.querySelectorAll('.panel').forEach(el=>el.classList.remove('show'))}for(const el of document.querySelectorAll('[data-close]'))el.onclick=hidePanels;
+function csvCell(v){const s=String(v??'');return '"'+s.replace(/"/g,'""')+'"'}
+function exportCSV(){const names=['id','time','latitude','longitude','gps_accuracy_m','coordinate_source','note','query_error',...fields];const rows=[names];for(const p of points){const a=p.soil||{};rows.push([p.id,p.time,p.lat,p.lon,p.gpsAccuracy_m,p.coordinate_source,p.note,p.queryError,...fields.map(k=>a[k]??'')])}return '\uFEFF'+rows.map(row=>row.map(csvCell).join(';')).join('\r\n')+'\r\n'}
+function exportGeoJSON(){return JSON.stringify({type:'FeatureCollection',name:'SoilMap field observations',features:points.map(p=>({type:'Feature',geometry:{type:'Point',coordinates:[p.lon,p.lat]},properties:{id:p.id,time:p.time,note:p.note,gps_accuracy_m:p.gpsAccuracy_m,coordinate_source:p.coordinate_source,query_error:p.queryError,source:'CGS soil 1:50000',...(p.soil||{})}}))},null,2)}
+function base64UTF8(s){const bytes=new TextEncoder().encode(s);let binary='';for(let i=0;i<bytes.length;i+=8192){binary+=String.fromCharCode(...bytes.subarray(i,i+8192))}return btoa(binary)}
+function saveDownload(name,mime,data){if(window.AndroidBridge&&typeof window.AndroidBridge.saveFile==='function'){window.AndroidBridge.saveFile(name,mime,base64UTF8(data));return}const blob=new Blob([data],{type:mime});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);notify(t('download'))}
+$('csvBtn').onclick=()=>saveDownload('soilmap_observations.csv','text/csv',exportCSV());$('geoBtn').onclick=()=>saveDownload('soilmap_observations.geojson','application/geo+json',exportGeoJSON());
+$('langBtn').textContent=LANG==='cs'?'EN':'CZ';$('langBtn').onclick=()=>{const target=LANG==='cs'?'soilmap_en.html':'soilmap_cs.html';location.href=target};
+plotPoints();
+})();</script></body></html>
