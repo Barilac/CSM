@@ -1,30 +1,67 @@
-# CSM – Czech Soil Map
+# CSM – Czech Soil Map (Česká půdní mapa)
 
-## Introduction
+Mobilní aplikace pro Android určená pro pedologický výzkum, terénní průzkum a ekologické mapování na území České republiky. Aplikace kombinuje interaktivní mapové služby ČGS (Česká geologická služba), ČÚZK a VÚMOP (KPP) s terénním deníkem a katalogem půdních typů.
 
-The app Czech Soil Map uses WMS service <a href= "https://geoportal.gov.cz/">Soil Map 1 : 250 000</a> to show the soil type you are currently standing on. <br>
-In the Soil list you can find the list of soils according to the wikipedia.org. The application also allows you to determine the current position according to the locator. We combine <i><a href="https://leafletjs.com/">leaflet</a></i> and WMS for active use in the field. Suitable for orientation when collecting soil and ecological samples.
+---
 
+## 🌟 Hlavní funkce
 
-## Overview
-<p align="center">
-<img src="media/images/screen0.jpg" width="20%">
+* 🗺️ **Interaktivní terénní mapa** – Zobrazení půdních typů ČGS 1:50 000, WRB 2022, historických půdních map KPP 1961–1970, geologických vrstev ČGS GEOČR50 a výškového reliéfu ČÚZK DMR 5G.
+* 📍 **Terénní dokumentace & Sondy** – Ukládání terénních bodů, horizontů půdního profilu (Munsellovy barvy, zrnitost, struktura), poznámek a fotografií.
+* 📏 **Tranzity a profil reliéfu** – Měření tranzitů s živým výškovým profilem terénu.
+* 💾 **Export dat** – Export uložených bodů a tranzitů do GeoJSON, GPX a CSV.
+* 📚 **Půdní katalog** – Přehledný seznam půdních typů dle české i mezinárodní klasifikace.
+* 🌐 **Česko-anglické rozhraní** – Plná lokalizace aplikace i mapových podkladů.
 
-<img src="media/images/screen1.jpg" width="20%">
+---
 
-<img src="media/images/screen2.jpg" width="20%">
+## 🗺️ Plán rozvoje a modernizace (Krok za krokem)
 
-<img src="media/images/screen3.jpg" width="20%">
-</p>
+Na základě vybraných priorit je připraven následující postup rozvoje aplikace:
 
-## Download
-You can download alpha version below:
-<br>
-<b>[Release](https://github.com/Barilac/CSM/releases)</b>
+### Fáze 1: Vyčištění projektu a aktualizace závislostí
+* [ ] **1.1 Odstranění neaktivního kódu (Dead Code Cleanup)**
+  * Odstranění zbytků starých `.java` souborů vzniklých při migraci do Kotlinu (`MainActivity.java`, `SplashActivity.java`, `CustomListAdapter.java`, `SoilAdapter.java` a dalších).
+* [ ] **1.2 Aktualizace Target SDK a AndroidX knihoven**
+  * Povýšení `compileSdk` a `targetSdk` z verze 33 na 35 (Android 15) v `app/build.gradle`.
+  * Aktualizace závislostí (`androidx.appcompat`, `com.google.android.material`, `navigation-ui-ktx`).
 
-## Acknowledgment
-This project was created at the Department of Archeology, Faculty of Arts, Charles University.<br>
-Link to the websites used to create the application:<br>
-<i><a href="http://uprav.ff.cuni.cz">Department of Archaeology</a></i><br>
-<i><a href="http://geoportal.gov.cz">© CENIA, česká informační agentura životního prostředí</a></i><br>
-<i><a href="https://github.com/domoritz/leaflet-locatecontrol">Locate control</a></i>
+### Fáze 2: Vylepšení Půdního katalogu
+* [ ] **2.1 Náhledy a ilustrace půdních typů**
+  * Nahrazení generovaných dvoupsímenných zástupných kruhů v `SoilAdapter.kt` a `DetailActivity.kt` reálnými fotografiemi a schématy půdních profilů.
+* [ ] **2.2 Rozšířené filtrování**
+  * Přidání filtrů podle půdních druhů (písčité, hlinité, jílovité), zamokření (gleje, pseudogleje) a klasifikace WRB v `GalleryFragment.kt`.
+* [ ] **2.3 Propojení Katalogu s Mapou**
+  * Přidání tlačítka „Zobrazit na mapě“ v detailu půdy s automatickým vyhledáním typických oblastí výskytu v mapovém okně.
+
+### Fáze 3: Pokročilé mapové funkce a offline provoz
+* [ ] **3.1 Nástroj pro vizuální srovnání vrstev (Swipe / Side-by-side slider)**
+  * Implementace Leaflet posuvníku pro živé srovnání např. historické KPP / leteckého snímku ČÚZK vs. půdní mapy ČGS.
+* [ ] **3.2 Offline kešování mapových kachlíků (Tile Caching / ServiceWorker)**
+  * Implementace offline paměti kachlíků v HTML/JS Leaflet modulu pro práci na poli bez mobilního signálu.
+
+### Fáze 4: Modernizace UI a Tmavý režim (Material 3 & Dark Mode)
+* [ ] **4.1 Podpora Material 3 & Edge-to-Edge**
+  * Sjednocení motivu na Material 3 a podporu celoplošného zobrazení.
+* [ ] **4.2 Podpora tmavého režimu (Dark Mode)**
+  * Příprava tmavého stylu pro aplikaci i HTML Leaflet podklad pro noční/šero pozorování.
+
+---
+
+## 🛠️ Architektura a technologie
+
+* **Jazyk:** Kotlin 1.8+ / Android SDK 33 → 35
+* **Architektura:** Android Architecture Components (Navigation Component, ViewModel, LiveData / StateFlow)
+* **Mapové jádro:** WebView + Leaflet.js 1.9, ArcGIS REST Services (ČGS, ČÚZK), WMS (VÚMOP KPP)
+* **Databáze terénních dat:** LocalStorage + IndexedDB (fotografie v plném rozlišení)
+
+---
+
+## 📄 Licencování a poděkování
+
+Projekt vznikl na Katedře archeologie Filozofické fakulty Univerzity Karlovy.
+Použitá data a webové služby:
+* © Česká geologická služba (ČGS)
+* © Český úřad zeměměřický a katastrální (ČÚZK)
+* © VÚMOP, v.v.i. (Komplexní průzkum půd KPP)
+* © CENIA, Česká informační agentura životního prostředí

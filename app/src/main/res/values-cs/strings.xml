@@ -36,5 +36,6 @@ SOFTWARE.
     </string>
     <string name="menu_acknowledgment">Poděkování</string>
     <string name="acknowledgment_text">Tato aplikace byla vytvořena na Ústavu pro archeologii, Filozofická fakulta, Univerzita Karlova.</string>
+    <string name="search_soil_hint">Hledat půdní typ…</string>
 
 </resources>

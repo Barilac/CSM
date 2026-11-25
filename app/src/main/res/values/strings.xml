@@ -36,5 +36,6 @@ SOFTWARE.
     </string>
     <string name="menu_acknowledgment">Acknowledgment</string>
     <string name="acknowledgment_text">This project was created at the Department of Archeology, Faculty of Arts, Charles University.</string>
+    <string name="search_soil_hint">Search soil type…</string>
 
 </resources>
